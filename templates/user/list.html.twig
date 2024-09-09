@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List</h1>
+
+    <ul>
+        {% for user in users %}
+            <li>
+                <strong>{{ user.name }}</strong><br>
+                Email: {{ user.email }}<br>
+                Phone: {{ user.phone }}<br>
+                Website: {{ user.website }}
+            </li>
+        {% else %}
+            <li>No users found</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

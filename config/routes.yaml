@@ -1,3 +1,11 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+
+# config/routes.yml
+
+user_list:
+    path: /users
+    controller: App\Controller\UserController::list
+    methods: GET
