@@ -3,9 +3,11 @@
 namespace App\Entity;
 
 use App\Repository\BookRepository;
+use ApiPlatform\Metadata\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
+#[ApiResource]
 class Book
 {
     #[ORM\Id]
