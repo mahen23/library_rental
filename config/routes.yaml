@@ -9,3 +9,18 @@ user_list:
     path: /users
     controller: App\Controller\UserController::list
     methods: GET
+
+api_login_check:
+    path: /api/login_check
+    controller: App\Controller\AuthenticationController::login
+    methods: POST
+
+api_login:
+    path: /api/login
+    controller: App\Controller\AuthenticationController::authenticate
+    methods: POST
+
+api_test:
+    path: /api/test
+    controller: App\Controller\TestController::test
+    methods: GET
