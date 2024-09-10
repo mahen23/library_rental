@@ -22,5 +22,5 @@ api_login:
 
 api_test:
     path: /api/test
-    controller: App\Controller\TestController::test
+    controller: App\Controller\TestController::index
     methods: GET
